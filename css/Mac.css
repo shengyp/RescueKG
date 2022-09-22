@@ -1,0 +1,60 @@
+.white-bcolor{
+	background-color: #FAFAFA;
+	}
+.Mac-main .container-fluid{
+	margin: 0 auto;
+	padding: 0;
+	}
+.Mac-main .container{
+	width:90%;
+	}
+.Mac-text{
+	margin: 0 auto;
+	padding: 0;
+	}
+
+.Mac-Macbook{
+	height:600px;
+	padding-top:60px;
+	}
+.Mac-iMacpro{
+	height:800px;
+	background: url(../img/imac_pro_large.jpg) no-repeat;
+	}
+.Mac-iMac{
+	height:900px;
+	background: url(../img/imac_large.jpg) no-repeat;
+	}
+.Mac-Macbook2{
+	height:550px;
+	background: url(../img/macbook_large.jpg) no-repeat;
+	}
+.Mac-Compare{
+	height:600px;
+	background: url(../img/mac_compare.jpg) no-repeat;
+	}
+.macos{
+	height:500px;
+	background:url(../img/mojave_large.jpg) no-repeat;
+	}
+.mac-education1{
+	height: 500px;
+	background: url(../img/education_large.jpg) no-repeat;
+	}
+.mac-education2{
+	height: 500px;
+	background: url(../img/higher_education_large.jpg) no-repeat;
+	}
+.Mac-Business-bg{
+	display: block;
+	height: 500px;
+	background: url(../img/business_large.jpg) no-repeat;
+	}
+
+.Mac-bg{
+	width:100%;
+	margin-top:30px;
+	background-size:100% 100%; 
+	background-position:center center;
+	}
+	

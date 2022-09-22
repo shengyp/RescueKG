@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection"content="telephone=no,email=no,date=no,address=no" />
+		<meta name="readerer" content="webkit" />
+		<title>Mac</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<!--轮播        -->
+		<link href="css/font-awesome.min.css" rel="stylesheet" media="all">
+		<link href="css/animate.min.css" rel="stylesheet" media="all">
+		<link href="css/bootstrap-touch-slider.css" rel="stylesheet" media="all">
+		
+			<!--页面样式        -->
+		<link rel="stylesheet" type="text/css" href="css/mycss.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Mac.css"/>
+		<!--图片动画        -->
+		<!-- 图表 -->
+		<link href="css/pizza.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+		<!-- 时间线 -->
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet" type="text/css" href="css/component.css"/>
+	</head>
+	<body>
+	<!-- 内容部分 -->
+		<section class="Mac-main">
+			<div>
+				<img src="img/封面.jpg" alt="" style="width:100%;height:100vh;">
+			</div>
+			<div style="width:100%;height:100% ;background-color: pink;">
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+			</div>
+			<div class="container">
+				<div style="width:100%;height:100% ;background-color: pink;">
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+				</div>
+			</div>
+			<div style="width:100%;height:100% ;background-color: pink;">
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+				<p>123</p>
+			</div>
+			<div class="container">
+				<div style="width:100%;height:100% ;background-color: pink;">
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+					<p>123</p>
+				</div>
+			</div>
+		</section>	
+	</body>
+	<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.touchSwipe.min.js"></script>
+	<script src="js/bootstrap-touch-slider-min.js"></script>
+	<script src="js/echarts.js"></script>
+	<!-- 图表 -->
+	<scrip src="js/jquery.min.js"></scrip>
+	<script src="js/snap.svg-min.js"></script>
+	<script src="js/pizza.js"></script>
+	<script type="text/javascript">
+	$('#bootstrap-touch-slider').bsTouchSlider();
+	// 文字
+	var animationDelay = 3500;
+  
+animateHeadline($('.cd-headline'));
+  
+function animateHeadline($headlines) {
+  $headlines.each(function(){
+    var headline = $(this);
+    //trigger animation
+    setTimeout(function(){ hideWord( headline.find('.is-visible') ) }, animationDelay);
+    //other checks here ...
+  });
+}
+function hideWord($word) {
+  var nextWord = takeNext($word);
+  switchWord($word, nextWord);
+  setTimeout(function(){ hideWord(nextWord) }, animationDelay);
+}
+  
+function takeNext($word) {
+  return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
+}
+  
+function switchWord($oldWord, $newWord) {
+  $oldWord.removeClass('is-visible').addClass('is-hidden');
+  $newWord.removeClass('is-hidden').addClass('is-visible');
+}
+singleLetters($('.cd-headline.letters').find('b'));
+  
+function singleLetters($words) {
+  $words.each(function(){
+    var word = $(this),
+      letters = word.text().split(''),
+      selected = word.hasClass('is-visible');
+    for (i in letters) {
+      letters[i] = (selected) ? '<i class="in">' + letters[i] + '</i>': '<i>' + letters[i] + '</i>';
+    }
+      var newLetters = letters.join('');
+      word.html(newLetters);
+  });
+}
+//图表
+Pizza.init();  
+Pizza.init('#example1', {
+  data: [23, 43, 17, 7, 11]
+});   
+
+	</script>
+</html>
