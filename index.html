@@ -9,6 +9,7 @@
   <script src="./js/echarts.js"></script>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/essay.css">
+  <script src="./js/g6.js"></script>
 </head>
 <body>
 	<!-- 内容部分 -->
@@ -60,16 +61,16 @@
           <!-- <p style="margin-left: 2em;">重庆在这样的情况以及疫情防控和高温不断的特殊背景下，各个新闻媒体争相在报道关于重庆山火的新闻。</p> -->
 				</div>
 			</div>
-			<div class="boxlayout" style="margin-top: 5vh; margin-bottom: 5vh">
+			<div class="boxlayout"  style="margin-top: 5vh; margin-bottom: 5vh;">
         <div style="width:100%;height:100% ;">
           <hr>
           <p ><span style="margin-left: 2em;">新闻</span>作为自由文本数据中的典型代表，本身就兼具累计速度快的特点。例如，这次重庆山火的爆发，在短短8天时间内，相关重庆山火的新闻报道数量爆发式增长。与此同时，虽然不少网站通过关键词查询就可以获取到该事件的相关新闻报道，但是欲想让大众通过阅读全部或绝大部分的新闻文档了解这次山火来龙去脉和最新进展，仍是会让人无从下手。</p>
-          <div style="text-align: center;">
+          
             <p style="margin-left: 2em;">针对当前的重庆山火事件，大众真实的认知需求可表现为：</p>
             <p style="margin-left: 2em;">一、透过海量、冗余的新闻文本描述，及时了解与该事件主题相关的人物，地点以及相关事件；</p>
             <p style="margin-left: 2em;">二、通过显著的人物、事件等来了解事实的发展脉络，并了解最新动向；</p>
             <p style="margin-left: 2em;">三、与通过长文本形式整理上述新闻，大众更倾向于用更高质量的结构化表达，简洁清晰地看到目前山火蔓延情势、物资需求情况、政府及救援人员动向等等。</p>
-          </div>
+          
           <div style="text-align: center;"> 
           <img src="./imag/frame.png" alt="" style="width: 400px;height:300px ;margin: 5vh 0; ">
           <p>救援知识图谱构建一体化构建框架</p>
@@ -78,47 +79,39 @@
           <p>本项目中的数据主要为新闻文本，其来源包括两类途径：第一类是利用人民网、光明网、重庆马路社等国内主流新闻媒体发布的、围绕“重庆山火险情”、“重庆山火救援”事件的同质文本数据集；第二类是利用新浪微博、腾讯微博、知乎等社交媒体发布的、关于“重庆山火”事件/话题的文本数据集。这里需要指出的是，在收集、甄别相关数据时，我们采用卡帕值（free-marginal multirater kappa）来评价三名数据收集人员决策的一致性，最终评价结果为Kappa=0.83，表明三名数据收集人员的甄别一致性较高，选取的新闻文本数据与“重庆山火”事件主题紧密扣合。</p>
         </div>
       </div>
-      <div class="boxlayout" style="margin-top: 5vh; margin-bottom: 5vh">
+      <div class="boxlayout" style="margin-top: 5vh; margin-bottom: 5vh ;height: 1420px;">
         <div  style="width:100%;height:100% ; margin-bottom: 5vh;  ">
           <hr>
-          <div class="boxcontent" style="text-align: center; margin-top: 5vh;">
-            <div class="nav-content" >
-            <img src="./imag/appreciate.png" alt="">
+          
+          <div style="text-align: center;">
+          
+            <div id= "container1" style="width: 700px;margin-left: 250px; "></div>
             <p style="color: gray;margin: 5vh 0;">感人的瞬间1...</p>
+          </div>
 
+          <div style="text-align: center;">
+            <img src="./imag/appreciatr1.png" alt="" style="width: 700px;height: 400px; ">
+            <p style="color: gray; margin:5vh 0 ;">感人的瞬间2...</p>
           </div>
-            <div class="nav-content" style="margin-left: 30px;">
-            <img src="./imag/appreciatr1.png" alt="">
-              <p style="color: gray; margin:5vh 0 ;">感人的瞬间2...</p>
-            </div>
-          </div>
-          <h4><b>结尾：</b></h4>
+          
+           
+          
+         
+          <p>2022年重庆的夏天，持续的极端高温、点多面广的山火、让电于民的限电、形势严峻的旱情、复杂多变的疫情……轮番挑战着这座城市，涌现出众多“英雄”，他们积极投身于救火、救灾、抗“疫”一线，守护家乡和人民群众的生命健康安全。重庆能源职业学院师生毅然决然、逆向而行，共同谱写了一首热血沸腾的英雄赞歌。助力抗疫一线，展现能源担当。面对多点频发的疫情，重庆能源职业学院师生将小我融入大我，以实际行动、多种方式支援和参与防控战“疫”。老师们走下讲台，主动请缨，投身战“疫”前线。医药学院桑林，城市建设学院罗凤麟、张宇洁，管理学院熊国红，得知所在社区志愿者缺口很大，毅然报名成为志愿者。学生们中断假期，挺身而出，投身疫情防控一线。他们坚守在政策宣传、拨打流调电话、关卡排查、协助核酸采集、医疗废物处置、秩序维持等岗位上，用实际行动贡献青春力量。城市建设学院2021级学生王昱婷、王仕豪，2022级新生童宗杰，因为表现突出，分别被丰都县、九龙坡区、江津区评为“优秀志愿者”“最美‘疫’勇军”。</p>
+          <h4 style="margin-top: 5vh;"><b>结尾：</b></h4>
           <div style="text-align: center;">
             <p>通过重庆山火的救援知识图谱的视域，从重庆山火的相关报道中分析出了救援的过程和在救援过程中参与救灾的各界志愿者与"支援者"。</p>
             <p>在这一场史无前例的高温和全国疫情的大背景下，两条山火的对弈，三省的齐心协力，四方支援的合作。重庆人民完成了打倒了这座大山，实现0伤亡的结局！</p>
-            <p>无论是过去还是现在，重庆人从来都不会被“大山”压倒！</p>
+            <h3><b>无论是过去还是现在，重庆人从来都不会被“大山”压倒！</b></h3>
           </div>
 
         </div>
       </div>
-			<div class="container boxlayout" style="background-color: gray;height: 500px;">
+			<!-- <div class="container boxlayout" style="background-color: gray;height: 500px;">
 				<div style="width:100%;height:100% ";>
-					<p>123</p>
-					<p>123</p>
-					<p>123</p>
-					<p>123</p>
-					<p>123</p>
-					<p>123</p>
-					<p>123</p>
-					<p>123</p>
-					<p>123</p>
-					<p>123</p>
-					<p>123</p>
-					<p>123</p>
-					<p>123</p>
-					<p>123</p>
+				
 				</div>
-			</div>
+			</div> -->
 		</section>	
     <script>
       var chartDom = document.getElementById('main1');
@@ -178,5 +171,6 @@ option = {
 
 option && myChart.setOption(option);
     </script>
+    <script src="./js/test1.js"></script>
 	</body>
 </html>
